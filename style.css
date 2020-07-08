@@ -1,0 +1,472 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* mycss */
+
+body {
+    background-color: aliceblue;
+}
+.topbar {
+    background-color: white;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.brand h1{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: maroon;
+    font-size: 15pt;
+}
+.pencarian {
+    display: none;
+}
+.pencarian input {
+    background-color: aliceblue;
+    border: none;
+    padding: 5px;
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+.pencarian input:focus {
+    border-color: rgb(34, 29, 29);
+}
+.login {
+       margin-left: auto;
+       margin-right: 20px;
+}
+.topbar .login button{
+    background-color: white;
+    border: none;
+    border: 1px solid rgb(216, 209, 209);
+    font-size: 15pt;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+}
+.topbar .login button img{
+    width: 30px;
+    height: 30px;
+}
+.brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cari */
+.cari {
+    background-color: white;
+    margin: 10px auto;
+    width: 90%;
+}
+.cari input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.cari input:focus {
+    border: none;
+}
+/* responsif */
+/* @media screen and (min-width: 800px) {
+   .topbar .login button{
+       width: 80px;
+   }
+} */
+
+
+
+
+/* content */
+.content {
+    background-color: white;
+    margin: 10px auto;
+    width: 90%;
+    display: grid;
+    grid-template-areas: 'tengah'
+                         'kanan';
+    /* grid-template-rows: 1fr 1fr; */
+    box-sizing: border-box;
+}
+
+
+.tengah {
+    grid-area: tengah;
+}
+.kanan {
+    grid-area: kanan;
+}
+.kiri {
+    grid-area: kiri;
+}
+.kiri h1,ul {
+    display: none;
+}
+.tengah img {
+    width: 100%;
+    height: 530px;
+}
+.content .kanan .title{
+    background-color: rgb(250, 247, 233);
+    height: 30px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.content .kanan .body{
+    background-color: rgb(241, 186, 84);
+    display: flex;
+}
+.content .kanan .body .kiri{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.content .kanan .kanan {
+    height: 135px;
+}
+.kanan .kanan img{
+    margin-top: -15px;
+    margin-right: 8px;
+}
+.content .kanan .body .kiri button {
+    background-color: white;
+    border: none;
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+.kanan .body .kiri button a{
+    text-decoration: none;
+    color: orange;
+    font-size: 15pt;
+}
+
+
+.kiri h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.kiri hr {
+    width: 90%;
+    border: 1px solid rgb(247, 238, 238);
+}
+.kiri ul {
+    margin-left: 15px;
+}
+.kiri ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.kiri ul img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.kiri ul li a{
+    text-decoration: none;
+    color: black;
+}
+.kiri ul li {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+/* isi */
+.isi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    background-color: aliceblue;
+    width: 90%;
+    gap: 5px;
+    margin: auto;
+}
+.isi div {
+    margin: auto;
+}
+.isi .satu {
+    max-height: 350px;
+    max-width: 250px;
+    background-color: white;
+}
+.isi div img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.isi div{
+     border-radius: 10px;
+}
+.isi div .gambar{
+    height: 250px;
+}
+.isi div .deskripsi,.harga {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* slideshow */
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 520px) {
+
+    /* isi */
+    .isi {
+    background-color: aliceblue;
+    margin: 10px auto;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+   .topbar{
+    background-color: white;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+   }
+   .login {
+       margin-left: auto;
+       margin-right: 20px;
+   }
+   .pencarian {
+       display: block;
+       margin: 20px;
+   }
+   .cari {
+       display: none;
+   }
+   .content {
+    background-color: white;
+    margin: 10px auto;
+    width: 80%;
+    }
+
+
+
+
+
+    /* slider */
+    .content {
+    background-color: white;
+    margin: 10px auto;
+    width: 90%;
+    display: grid;
+    grid-template-areas: 'kiri tengah kanan';
+    grid-template-columns: 1fr 3fr 1fr;
+    box-sizing: border-box;
+}
+    
+    .kiri {
+        grid-area: kiri;
+        display: block;
+    }
+    .kanan {
+    grid-area: kanan;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+
+    .kiri h1 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.kiri hr {
+    width: 90%;
+    border: 1px solid rgb(247, 238, 238);
+}
+.kiri ul {
+    margin-left: 15px;
+}
+.kiri ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.kiri ul img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.kiri ul li a{
+    text-decoration: none;
+    color: black;
+}
+.kiri ul li {
+    margin-bottom: 30px;
+}
+.kiri h1,ul {
+    display: block;
+}
+.kanan .title{
+    background-color: rgb(250, 247, 233);
+    height: 30px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.kanan .body{
+    background-color: rgb(241, 186, 84);
+    display: flex;
+}
+.kanan .body .kiri{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.kanan .kanan {
+    height: 135px;
+}
+.kanan .kanan img{
+    margin-top: -15px;
+    margin-right: 8px;
+}
+.kanan .body .kiri button {
+    background-color: white;
+    border: none;
+    width: 100px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 5px;
+}
+.kanan .body .kiri button a{
+    text-decoration: none;
+    color: orange;
+    font-size: 15pt;
+}
+
+
+
+}
