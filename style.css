@@ -307,6 +307,80 @@ body {
     text-decoration: none;
     color: maroon;
 }
+footer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+footer .satu {
+    display: flex;
+}
+footer .satu h1 {
+    line-height: 50px;
+}
+footer .satu img{
+    width: 50px;
+    height: 50px;
+}
+footer .dua h1 {
+    font-weight: bold;
+}
+footer .dua {
+    line-height: 50px;
+}
+footer .tiga {
+    line-height: 50px;
+}
+footer .tiga h1 {
+    font-weight: bold;
+}
+footer .empat {
+    display: flex;
+} 
+footer .empat img:last-child{
+    width: 250px;
+    height: 100px;
+    display: grid;
+    align-self: center;
+}
+
+.content,.judul-isi {
+    margin-bottom: 30px;
+}
+
+.lihat-semua {
+    display: grid;
+    justify-items: end;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.lihat-semua a{
+    text-decoration: none;
+    color: maroon;
+}
+footer {
+    display: block;
+    text-align: center;
+}
+footer div {
+    margin-bottom: 50px;
+}
+footer .satu {
+    display: none;
+}
+footer .empat {
+    display: grid;
+    justify-items: center;
+}
+
+
+
+
+
 
 
 
