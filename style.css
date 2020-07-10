@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -258,29 +259,59 @@ body {
 }
 .isi div {
     margin: auto;
+    width: 200px;
 }
 .isi .satu {
-    max-height: 350px;
-    max-width: 250px;
     background-color: white;
 }
+
+.isi .satu .gambar {
+    background-color: white;
+}
+
+.isi div a{
+    
+   text-decoration: none;
+   background-color: #23ab96;
+   border-radius: 5px;
+   color: white;
+   text-align: center;
+   line-height: 30px;
+   width: 100%;
+   display: inline-block;
+   height: 30px;
+}
+.isi div button a{
+    text-decoration: none;
+    color: white;
+}
+
 .isi div img {
     width: 100%;
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 150px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .isi div{
-     border-radius: 10px;
-}
-.isi div .gambar{
-    height: 250px;
-}
-.isi div .deskripsi,.harga {
+     border-radius: 5px;
+} 
+.isi div .deskripsi,.harga,.tombol-tambah {
     padding: 10px;
     box-sizing: border-box;
 }
-
+.deskripsi {
+    line-height: 25px;
+    color: black;
+    font-size: 15;
+}
+.isi .harga {
+    display: flex;
+    justify-content: space-between;
+}
+.isi .harga p:last-child {
+    color: #23ab96;
+    font-size: 10pt;
+}
 .judul-isi {
     width: 90%;
     margin: auto;
