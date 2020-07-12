@@ -61,6 +61,7 @@ body {
     align-items: center;
     box-sizing: border-box;
 }
+
 .brand h1{
     margin-left: 10px;
     display: flex;
@@ -72,7 +73,7 @@ body {
     display: none;
 }
 .pencarian input {
-    background-color: aliceblue;
+    background-color: white;
     border: none;
     padding: 5px;
     font-size: 15pt;
@@ -85,20 +86,23 @@ body {
        margin-left: auto;
        margin-right: 20px;
 }
-.topbar .login button{
-    background-color: white;
-    border: none;
-    border: 1px solid rgb(216, 209, 209);
-    font-size: 15pt;
-    border-radius: 5px;
+.topbar .login a {
     display: flex;
-    align-items: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
     padding: 5px;
-
+    border: 1px solid rgb(187, 178, 178);
+    border-radius: 5px;
 }
-.topbar .login button img{
+.topbar .login img{
     width: 30px;
     height: 30px;
+}
+.topbar .login h1 {
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
 }
 .brand img {
     width: 30px;
@@ -162,17 +166,20 @@ body {
 }
 .kanan {
     grid-area: kanan;
+    background-color: aliceblue;
 }
+
+
 .kiri {
     grid-area: kiri;
 }
 .kiri h1,ul {
     display: none;
-}
-.tengah img {
+}   
+.kanan div {
     width: 100%;
-    height: 530px;
 }
+
 .content .kanan .title{
     background-color: rgb(250, 247, 233);
     height: 30px;
@@ -189,12 +196,13 @@ body {
     box-sizing: border-box;
 }
 .content .kanan .kanan {
-    height: 135px;
+    height: 150px;
+    background-color: rgb(241, 186, 84);
 }
-.kanan .kanan img{
+/* .kanan .kanan img{
     margin-top: -15px;
-    margin-right: 8px;
-}
+    margin-right: 20px;
+} */
 .content .kanan .body .kiri button {
     background-color: white;
     border: none;
@@ -203,13 +211,15 @@ body {
     height: 30px;
     border-radius: 5px;
 }
+.kanan .kanan img{
+    margin-top: 15px;
+    margin-left:20%;
+}
 .kanan .body .kiri button a{
     text-decoration: none;
     color: orange;
     font-size: 15pt;
 }
-
-
 .kiri h1 {
     margin-left: 20px;
     margin-top: 20px;
@@ -252,7 +262,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: aliceblue;
-    width: 500px;
+    width: 90%;
     gap: 20px;
     margin: auto;
 }
@@ -283,7 +293,7 @@ body {
 
 .isi div img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -296,7 +306,7 @@ body {
 }
 .deskripsi {
     line-height: 25px;
-    color: black;
+    color: #666;
     font-size: 15;
 }
 .isi .harga {
@@ -416,30 +426,65 @@ footer .empat {
 
 
 /* slideshow */
+    .tengah img {
+        width: 100%;
+        height: 300px;
+    }
+        .mySlides {
+            display: none;
+        }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 100px;
+            top: -490px;
+            left: -340px;
+            opacity: .5;
+            position: relative;
+            background-color: #bbb;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
+        .active {
+            background-color: #717171;
+        }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
 
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
 
 
 
@@ -457,18 +502,24 @@ footer .empat {
 
 
 @media screen and (min-width: 768px) {
-
+ .tengah img {
+        width: 100%;
+        height: 540px;
+    }
     /* isi */
     .isi {
     background-color: aliceblue;
-    width: 1200px;
+    width: 1520px;
     display: flex;
     justify-content: space-between;
 }
 
-
+.kanan .kanan img{
+    margin-top: 0;
+    margin-left: -10%;
+}
 .judul-isi {
-    width: 1200px;
+    width: 1520px;
     margin: auto;
     font-size: 20pt;
     display: flex;
@@ -477,10 +528,12 @@ footer .empat {
 
 
    .topbar{
-    background-color: white;
+    background-color: aliceblue;
     min-height: 50px;
     display: flex;
     align-items: center;
+    width: 1520px;
+    margin: auto;
    }
    .login {
        margin-left: auto;
@@ -506,10 +559,10 @@ footer .empat {
     .content {
     background-color: white;
     margin: 10px auto;
-    width: 1200px;
+    width: 1520px;
     display: grid;
     grid-template-areas: 'kiri tengah kanan';
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     box-sizing: border-box;
 }
     
@@ -521,9 +574,13 @@ footer .empat {
     grid-area: kanan;
     display: grid;
     grid-template-rows: repeat(3,1fr);
+    margin-left: 20px;
+    background-color: aliceblue;
 }
-
-
+    .kanan .kanan img{
+    margin-top: 0;
+    margin-right: 0;
+}
     .kiri h1 {
     margin-left: 20px;
     margin-top: 20px;
@@ -566,32 +623,7 @@ footer .empat {
 .kanan .body{
     background-color: rgb(241, 186, 84);
     display: flex;
-}
-.kanan .body .kiri{
-    padding: 20px;
-    box-sizing: border-box;
-}
-.kanan .kanan {
-    height: 135px;
-}
-.kanan .kanan img{
-    margin-top: -15px;
-    margin-right: 8px;
-}
-.kanan .body .kiri button {
-    background-color: white;
-    border: none;
-    width: 100px;
-    margin-top: 20px;
-    height: 30px;
-    border-radius: 5px;
-}
-.kanan .body .kiri button a{
-    text-decoration: none;
-    color: orange;
-    font-size: 15pt;
-}
-
+}   
 .content,.judul-isi {
     margin-bottom: 30px;
 }
@@ -599,16 +631,15 @@ footer .empat {
 .lihat-semua {
     display: grid;
     justify-items: end;
-    width: 1200px;
+    width: 1520px;
     margin: auto;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 .lihat-semua a{
     text-decoration: none;
     color: maroon;
 }
-
-
 
 footer{
     background-color: white;
