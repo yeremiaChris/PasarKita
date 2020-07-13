@@ -52,6 +52,110 @@ table {
 body {
     background-color: aliceblue;
 }
+
+
+
+
+.container {
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    margin-top: 50px;
+    border: 1px solid rgb(230, 220, 220);
+}
+.input {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+}
+.input input{
+    border: none;
+    border-bottom: 1px solid rgb(209, 202, 202);
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    padding-bottom: 5px;
+    font-size: 12pt;
+}   
+.button {
+    width: 80%;
+    margin: auto;
+}
+.button button {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: teal;
+    border: none;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.register {
+    margin: auto;
+    width: 350px;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+
+.register {
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+    background-color: aliceblue;
+}
+
+.register button {
+    width: 100%;
+    margin-top: 10px;
+    background-color: tan;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: unset;
+}
+.register h1 {
+    display: flex;
+    color: gray;
+}
+.register hr{
+    border: 1px solid rgb(223, 216, 216);
+    width: 110px;
+}
+
+footer{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+footer p {
+    color: grey;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.register hr{
+    border: 1px solid rgb(223, 216, 216);
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
 .container {
     margin: auto;
     width: 350px;
@@ -121,4 +225,6 @@ footer p {
     width: 350px;
     margin: auto;
     text-align: center;
+}
+
 }

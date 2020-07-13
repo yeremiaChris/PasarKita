@@ -51,18 +51,40 @@ table {
 
 /* mycss */
 
+
 body {
     background-color: aliceblue;
 }
+
+
 .topbar{
     background-color: aliceblue;
     min-height: 50px;
     display: flex;
     align-items: center;
-    width: 1520px;
+    width: 90%;
     margin: auto;
-    margin-bottom: 20px;
+    justify-content: space-between;
    }
+
+.topbar .login a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid rgb(187, 178, 178);
+    border-radius: 5px;
+}
+.topbar .login img{
+    width: 30px;
+    height: 30px;
+}
+.topbar .login h1 {
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+}
 
 .brand h1{
     margin-left: 10px;
@@ -72,7 +94,135 @@ body {
     font-size: 15pt;
 }
 
+.brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
 .pencarian input {
+    display: none;
+}
+.cari  {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.cari input {
+    width: 100%;
+    margin: auto;
+}
+footer{
+    background-color: white;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+footer .satu {
+    display: none;
+}
+
+footer .dua h1 {
+    font-weight: bold;
+}
+footer .dua,.tiga {
+    line-height: 50px;
+    text-align: center;
+}
+footer .tiga h1 {
+    font-weight: bold;
+}
+footer .empat {
+    margin-top: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+} 
+footer .empat img:last-child{
+    width: 250px;
+    height: 100px;
+    display: grid;
+    align-self: center;
+}
+.container-tambah {
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.container-tambah div {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+#dua {
+    display: none;    
+}
+
+.input.judul  {
+    padding: 20px;
+    font-size: 20pt;
+    font-weight: bold;
+}
+.container-tambah .input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-tambah .input label {
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.container-tambah .input.kategori select {
+    width: 100%;
+}
+
+.container-tambah .btn button {
+    margin: 20px 10px;
+    height: 30px;
+    border: none;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+.topbar{
+    background-color: aliceblue;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    width: 1520px;
+    margin: auto;
+    margin-bottom: 20px;
+   }
+.cari {
+    display: none;
+}
+.brand h1{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: maroon;
+    font-size: 15pt;
+}
+
+.pencarian input {
+    display: inline-block;
     background-color: white;
     border: none;
     margin-left: 20px;
@@ -111,7 +261,12 @@ body {
     margin-right: 10px;
 }
 
-
+#satu {
+    display: none;
+}
+#dua {
+    display: inline-block;
+}
 .container-tambah {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -143,7 +298,7 @@ body {
     display: flex;
     margin-bottom: 20px;
 }
-.container-tambah .input input {
+.container-tambah .input input{
     width: 70%;
     
 }
@@ -214,4 +369,6 @@ footer .empat img:last-child{
     height: 100px;
     display: grid;
     align-self: center;
+}
+
 }
