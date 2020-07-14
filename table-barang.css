@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+
+
+
+
+.brand h1{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    color: maroon;
+    font-size: 15pt;
+}
+.pencarian {
+    display: none;
+}
+.pencarian input {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    font-size: 15pt;
+    box-sizing: border-box;
+}
+.pencarian input:focus {
+    border-color: rgb(34, 29, 29);
+}
+.login {
+       margin-left: auto;
+       margin-right: 20px;
+}
+.topbar .login a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid rgb(187, 178, 178);
+    border-radius: 5px;
+}
+.topbar .login img{
+    width: 30px;
+    height: 30px;
+}
+.topbar .login h1 {
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+}
+.brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.topbar{
+    background-color: aliceblue;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    width: 1520px;
+    margin: auto;
+   }
+   .login {
+       margin-left: auto;
+       margin-right: 20px;
+   }
+   .pencarian {
+       display: block;
+       margin: 20px;
+   }
+   .cari {
+       display: none;
+   }
+
+
+
+   .daftar-barang {
+       background-color: white;
+       width: 1520px;
+       margin: auto;
+   }
+
+   .daftar-barang table {
+       width: 100%;
+       border: 1px solid rgb(241, 238, 238);
+   }    
+
+   .daftar-barang th:nth-child(3) {
+       width: 300px;
+   }
+
+   .daftar-barang th,td {
+       padding: 10px 0;
+       text-align: left;
+       padding-left: 10px;
+       box-sizing: border-box;
+       border-bottom: 1px solid rgb(241, 238, 238);
+    }
+
+    .daftar-barang th:last-child {
+        width: 300px;
+    }
+
+
+
+    .daftar-barang a:nth-child(2),a:last-child {
+        text-decoration: none;
+        margin-left: 30px;
+    }
+
+
+   .daftar-barang th:first-child,td:first-child{
+       text-align: center;
+   }
+
+   .daftar-barang a:first-child {
+       background-color: teal;
+   }
+
+   .daftar-barang a:last-child {
+       background-color: maroon;
+   }
+
+
+   .daftar-barang a{
+       text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+       text-decoration: none;
+       color: white;
+       display: inline-block;
+       background-color: black;
+       padding: 10px 10px;
+       border-radius: 5px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+   footer{
+    margin-top: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+footer .satu {
+    display: flex;
+}
+footer .satu h1 {
+    line-height: 50px;
+}
+footer .satu img{
+    width: 50px;
+    height: 50px;
+}
+footer .dua h1 {
+    font-weight: bold;
+}
+footer .dua {
+    line-height: 50px;
+}
+footer .tiga {
+    line-height: 50px;
+}
+footer .tiga h1 {
+    font-weight: bold;
+}
+footer .empat {
+    display: flex;
+} 
+footer .empat img:last-child{
+    width: 250px;
+    height: 100px;
+    display: grid;
+    align-self: center;
+}

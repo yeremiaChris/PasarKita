@@ -203,6 +203,7 @@ body {
 
    .detail h1 {
        line-height: 40px;
+       margin-left: 20px;
    }
    .detail h1:nth-child(3) {
        color: red;
@@ -506,7 +507,7 @@ footer .empat {
        box-sizing: border-box;
    }
    .detail {
-       line-height: 100px;
+       line-height: 80px;
        display: inline-block;
    }
    .tombol-barang {
@@ -537,6 +538,10 @@ footer .empat {
        text-decoration: none;
        color: white;
        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+   }
+
+   .detail h1 {
+       margin-left: 0;
    }
 
    .detail h1:nth-child(3){
