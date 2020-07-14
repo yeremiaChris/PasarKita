@@ -171,15 +171,47 @@ body {
 
    .detail .penjual {
        display: flex;
-       align-items: center;
+       justify-content: start;
+       align-items: stretch;
        gap: 30px;
    }
+   
+
    .detail {
+       display: grid;
+   }
+
+   .detail button.sukai-barang {
+       margin-bottom: 10px;
+       width: 100%;
+       border: none;
+       width: 100%;
+       height: 35px;
+       color: white;
+       text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+       background-color: rgb(241, 94, 94);
+       border-radius: 5px;
+
+   }
+
+   .detail .share {
+       background-color: teal;
+       width: 100%;
+       box-sizing: border-box;
+       padding: 10px 30px;
+   }
+
+   .detail h1 {
        line-height: 40px;
+   }
+   .detail h1:nth-child(3) {
+       color: red;
    }
 
 
    .detail a {
+       margin-bottom: 10px;
+       text-align: center;
        background-color: yellowgreen;
        padding: 10px;
        border-radius: 5px;
@@ -189,35 +221,105 @@ body {
    }
 
 
-
-   .detail .sukai-barang{
-       border: none;
-       width: 150px;
-       height: 30px;
-       color: white;
-       text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-       background-color: rgb(241, 94, 94);
-       border-radius: 5px;
-   }
-
-   .detail .share {
-       background-color: teal;
-       width: 100px;
-       padding: 10px 30px;
-   }
-
    .detail .penjual .kunjungi-penjual a{
        background-color: brown;
+       display: block;
     }
     
-    .detail .penjual .sukai-penjual button {
-        background-color: rgb(241, 94, 94);
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
-        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    
+
+
+   
+.penjual .profile h1{
+    width: 145px;
+    margin-left: 10px;
+}
+.detail .penjual .sukai-penjual button {
+    background-color: rgb(241, 94, 94);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    box-sizing: border-box;
+
+}
+
+.deskripsi {
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+        box-sizing: border-box;
     }
+    .deskripsi .brand {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    .deskripsi .penjelasan {
+        margin-left: 10px;
+        padding-bottom: 20px;
+    }
+
+
+
+
+
+ footer{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+footer .satu {
+    display: flex;
+}
+footer .satu h1 {
+    line-height: 50px;
+}
+footer .satu img{
+    width: 50px;
+    height: 50px;
+}
+footer .dua h1 {
+    font-weight: bold;
+}
+footer .dua {
+    line-height: 50px;
+}
+footer .tiga {
+    line-height: 50px;
+}
+footer .tiga h1 {
+    font-weight: bold;
+}
+footer .empat {
+    display: flex;
+} 
+footer .empat img:last-child{
+    width: 250px;
+    height: 100px;
+    display: grid;
+    align-self: center;
+}
+footer {
+    display: block;
+    text-align: center;
+}
+footer div {
+    margin-bottom: 50px;
+}
+footer .satu {
+    display: none;
+}
+footer .empat {
+    display: grid;
+    justify-items: center;
+}
+
+
 
 
 
@@ -304,6 +406,23 @@ body {
 }
 
 
+.detail .penjual .sukai-penjual button {
+        background-color: rgb(241, 94, 94);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    }
+
+.detail .penjual .kunjungi-penjual a{
+       background-color: brown;
+       width: 100px;
+       display: inline;
+    }
+
+
+
 .topbar{
     background-color: aliceblue;
     min-height: 50px;
@@ -327,7 +446,7 @@ body {
 
    .detail-container {
        background-color: white;
-       width: 1520px;
+       width: 1000px;
        margin: auto;
        display: flex;
        gap: 30px;
@@ -348,7 +467,7 @@ body {
    .gambar-gambar {
        display: flex;
        gap: 20px;
-       width: 1520px;
+       width: 1000px;
        background-color: white;
        margin: auto;
        padding-left: 30px;
@@ -371,7 +490,8 @@ body {
        width: 50px;
        height: 50px;
    }
-   .detail .penjual .profile {
+    .penjual .profile {
+       width: 210px;
        display: flex;
        align-items: center;
    }
@@ -379,10 +499,15 @@ body {
    .detail .penjual {
        display: flex;
        align-items: center;
-       gap: 30px;
+       border: 1px solid rgb(212, 202, 202);
+       border-radius: 5px;
+       width: 530px;
+       padding-left: 10px;
+       box-sizing: border-box;
    }
    .detail {
-       line-height: 65px;
+       line-height: 100px;
+       display: inline-block;
    }
    .tombol-barang {
        display: flex;
@@ -390,8 +515,23 @@ body {
        gap: 20px;
    }
 
+
+   .detail .penjual .sukai-penjual button {
+    background-color: rgb(241, 94, 94);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    box-sizing: border-box;
+
+}
+
+
+
    .detail a {
        background-color: yellowgreen;
+       box-sizing: border-box;
        padding: 10px;
        border-radius: 5px;
        text-decoration: none;
@@ -399,41 +539,33 @@ body {
        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
    }
 
+   .detail h1:nth-child(3){
+       color: red;
+       font-weight: bold;
+   }
 
-
-   .detail .sukai-barang{
+   .detail button.sukai-barang {
+       width: 120px;
        border: none;
-       width: 150px;
-       height: 30px;
+       height: 40px;
        color: white;
        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
        background-color: rgb(241, 94, 94);
        border-radius: 5px;
+
    }
 
    .detail .share {
        background-color: teal;
        width: 100px;
-       padding: 10px 30px;
+       padding: 11px 31px;
+       box-sizing: border-box;
    }
-
-   .detail .penjual .kunjungi-penjual a{
-       background-color: brown;
-    }
-    
-    .detail .penjual .sukai-penjual button {
-        background-color: rgb(241, 94, 94);
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
-        text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    }
 
 
     .deskripsi {
         background-color: white;
-        width: 1520px;
+        width: 1000px;
         margin: auto;
         margin-bottom: 20px;
         padding: 20px;
